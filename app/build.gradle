@@ -1,14 +1,20 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'com.google.ar.sceneform.plugin'
 }
+
+sceneform.asset('data/ironman/Iron_Man.obj',
+        'default',
+        'data/ironman/Iron_Man.sfa',
+        'src/main/assets/ironman')
 
 android {
     compileSdk 30
 
     defaultConfig {
         applicationId "com.phoenix.arcoredemo"
-        minSdk 21
+        minSdk 24
         targetSdk 30
         versionCode 1
         versionName "1.0"
